@@ -9,7 +9,7 @@ name: Check step 6, Production deployment cleanup
 on: 
   workflow_dispatch:
   workflow_run:
-    workflows: ["Configure Azure environment"]
+    workflows: ["Check step 5, Test the deploy to staging workflow"]
     types: [completed]
     branches: [main]
 
