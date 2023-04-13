@@ -25,6 +25,7 @@ jobs:
       - name: npm install and build webpack
         run: |
           sudo apt-get purge nodejs
+          brew uninstall node
           curl -s https://deb.nodesource.com/setup_16.x | sudo bash
           sudo apt install nodejs -y
           node use 16
