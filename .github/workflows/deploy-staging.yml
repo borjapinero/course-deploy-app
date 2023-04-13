@@ -26,7 +26,8 @@ jobs:
         run: |
           curl -s https://deb.nodesource.com/setup_16.x | sudo bash
           sudo apt install nodejs -y
-          nvm use 16
+          npm install -g n
+          n 16
           npm install
           npm run build
       - uses: actions/upload-artifact@v3
