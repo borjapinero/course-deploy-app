@@ -11,6 +11,7 @@ on:
   workflow_run:
     workflows: ["Configure Azure environment"]
     types: [completed]
+    branches: [main]
 
 permissions:
   # Need `contents: read` to checkout the repository
